@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Érison Clayton</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        :root {
+            --bg: #0f0f0f;
+            --card: #1c1c1c;
+            --accent: #00b4ff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px 15px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 440px;
+            margin: 0 auto;
+        }
+
+        /* Header / Profile */
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .banner {
+            height: 220px;
+            background: url('https://i.imgur.com/2sUUg.png') center/cover no-repeat;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+        }
+
+        .avatar-container {
+            position: relative;
+            width: 110px;
+            margin: -55px auto 10px;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 5px solid #0f0f0f;
+            overflow: hidden;
+        }
+
+        .android {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background: #34c759;
+            color: black;
+            font-size: 22px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #0f0f0f;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .title {
+            font-size: 15px;
+            color: #aaaaaa;
+        }
+
+        /* Bio */
+        .bio {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 18px;
+            font-size: 15.2px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        /* Stack */
+        .stack {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 18px;
+            margin-bottom: 20px;
+        }
+
+        .stack-title {
+            font-size: 15px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .stack-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .tag {
+            background: #2a2a2a;
+            color: #00d4ff;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13.5px;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .feature {
+            background: var(--card);
+            padding: 16px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .feature-title {
+            font-size: 13.5px;
+            color: #ccc;
+        }
+
+        /* Links */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link {
+            background: var(--card);
+            padding: 16px 18px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .link:hover {
+            transform: translateY(-3px);
+            background: #252525;
+        }
+
+        .link-icon {
+            font-size: 24px;
+            width: 40px;
+        }
+
+        .link-text h3 {
+            font-size: 16px;
+        }
+
+        .link-text p {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #555;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Profile -->
+        <div class="header">
+            <div class="banner"></div>
+            <div class="avatar-container">
+                <div class="avatar">
+                    <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.KKNTlpRNEmaYYMFv6lgw8QHaHa%3Fr%3D0%26pid%3DApi&sp=1780476208T00728dfc6a3e8c1d8d61fdf86129dbb7c2d419dba64798e325d2daf321cb6625" alt="Érison" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="android">🤖</div>
+            </div>
+            <h1 class="name">×Érison Clayton×</h1>
+            <p class="title">20 Anos • OS Developer • Low-Level</p>
+        </div>
+
+        <!-- Bio -->
+        <div class="bio">
+            Me chamo Érison Clayton, tenho 20 anos e sou hobbyista em Desenvolvimento de Sistemas Operacionais (Tiny). Tenho imenso interesse em baixo nível e estou sempre estudando e trabalhando com linguagem C e Assembly x86.
+        </div>
+
+        <!-- Stack -->
+        <div class="stack">
+            <div class="stack-title">Minha Stack do dia atualmente é linguagens que domino:</div>
+            <div class="stack-tags">
+                <span class="tag">Odin language</span>
+                <span class="tag">C language</span>
+                <span class="tag">Rust language</span>
+                <span class="tag">Zig language</span>
+                <span class="tag">Python</span>
+                <span class="tag">Assembly x86</span>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🔬</div>
+                <div class="feature-title">Pesquisa em AI/ML</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚙️</div>
+                <div class="feature-title">Kernel, Loaders, Firmware</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📂</div>
+                <div class="feature-title">Pequenos projetos</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏴‍☠️</div>
+                <div class="feature-title">Reverse Engineering, Criptografia</div>
+            </div>
+        </div>
+
+        <!-- Links -->
+        <div class="links">
+            <a href="https://github.com/yst4rhckr" target="_blank" class="link">
+                <span class="link-icon">🐙</span>
+                <div class="link-text">
+                    <h3>GitHub</h3>
+                    <p>yst4rhckr — Low-level projects</p>
+                </div>
+            </a>
+
+            <a href="" target="_blank" class="link">
+                <span class="link-icon">📺</span>
+                <div class="link-text">
+                    <h3>Odyssee</h3>
+                    <p>Canal de conteúdo low-level</p>
+                </div>
+            </a>
+
+            <a href="https://x.com/eriscleytonrn" target="_blank" class="link">
+                <span class="link-icon">𝕏</span>
+                <div class="link-text">
+                    <h3>X (Antigo Twitter) </h3>
+                    <p>@eriscleytonrn</p>
+                </div>
+            </a>
+
+            <a href="https://instagram.com/eriscleyton_rn" target="_blank" class="link">
+                <span class="link-icon">📷</span>
+                <div class="link-text">
+                    <h3>Instagram</h3>
+                    <p>@eriscleyton_rn</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
